@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G5019" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Employee" representedClassName=".Employee" syncable="YES">
+        <attribute name="department" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="InnovationIdea" representedClassName=".InnovationIdea" syncable="YES">
+        <attribute name="dateSubmitted" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ideaDescription" attributeType="String" syncable="YES"/>
+        <attribute name="isDraft" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="submittedBy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="submitterDepartment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="submitterEmailAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="partner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Employee" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="InnovationIdea" positionX="-331.9296875" positionY="3.6640625" width="128" height="165"/>
+    </elements>
+</model>
